@@ -65,6 +65,7 @@ public class UserListActivity extends AppCompatActivity {
         String URL = "https://api.github.com/users";
         RequestQueue queue = Volley.newRequestQueue(this);
 
+
         Gson jsonConverter = new Gson();
 
         JsonObjectRequest userRequest = new JsonObjectRequest(
