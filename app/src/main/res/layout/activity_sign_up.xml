@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F1EBEB"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/emailInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="SIGN UP PAGE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/emailInp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailInp"
+        app:layout_constraintTop_toBottomOf="@+id/emailInp" />
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#F44336"
+        android:paddingStart="100px"
+        android:paddingTop="50px"
+        android:paddingEnd="100px"
+        android:paddingRight="20px"
+        android:paddingBottom="50px"
+        android:text="PROCEED"
+        android:textColor="#F6EDED"
+        app:layout_constraintEnd_toEndOf="@+id/phoneInp"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/phoneInp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInp" />
+
+    <Button
+        android:id="@+id/viewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="View Users"
+        android:onClick="showList"
+        app:layout_constraintEnd_toEndOf="@+id/proceedBtn"
+        app:layout_constraintStart_toStartOf="@+id/proceedBtn"
+        app:layout_constraintTop_toBottomOf="@+id/proceedBtn" />
+</android.support.constraint.ConstraintLayout>
